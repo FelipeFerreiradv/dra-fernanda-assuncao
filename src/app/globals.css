@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+@theme {
+  /* ————— Paleta — editorial quente ————— */
+  --color-ivory: #f5f1e8;
+  --color-ink: #0b0f19;
+  --color-slate: #2a3142;
+  --color-gold: #c9a36b;
+  --color-gold-dark: #a37e47;
+  /* Dourado escuro para TEXTO pequeno sobre fundos claros — passa WCAG AA
+     (~5:1 sobre ivory/branco). O gold-dark fica reservado a ícones,
+     linhas decorativas, gradientes de botão e texto grande (≥24px). */
+  --color-gold-deep: #7e5c2b;
+  --color-sand: #e8d6b3;
+  /* Off-whites quentes — substituem o branco puro (nunca #FFFFFF) */
+  --color-paper: #faf6ec;
+  --color-cream: #efe6d4;
+  --color-canvas: #f1eadb;
+  --color-espresso: #1a1712;
+
+  /* ————— Tipografia ————— */
+  --font-display: var(--font-fraunces), "Fraunces", Georgia, serif;
+  --font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
+
+  /* ————— Tracking editorial ————— */
+  --tracking-luxe: 0.32em;
+  --tracking-wide-plus: 0.18em;
+
+  /* ————— Easing cinematográfico ————— */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-luxe: cubic-bezier(0.65, 0.05, 0, 1);
+
+  /* ————— Animações utilitárias ————— */
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-accordion-down: accordion-down 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-accordion-up: accordion-up 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
+    to {
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
+
+/* ————— Base ————— */
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-ivory);
+}
+
+/* ————— Focus visível — WCAG AA ————— */
+:focus-visible {
+  outline: 2px solid var(--color-gold-dark);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ————— Scrollbar discreta ————— */
+@media (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-ivory);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-gold) 55%, transparent);
+    border-radius: 8px;
+  }
+}
+
+/* ————— Utilitários editoriais ————— */
+@utility container-luxe {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-inline: 1.5rem;
+
+  @media (min-width: 768px) {
+    padding-inline: 3rem;
+  }
+  @media (min-width: 1280px) {
+    padding-inline: 4rem;
+  }
+}
+
+@utility hairline-gold {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      var(--color-gold),
+      color-mix(in srgb, var(--color-gold) 20%, transparent)
+    );
+  }
+}
+
+/* Número de seção gigante — detalhe editorial */
+@utility section-number {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--color-gold) 45%, transparent);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ————— Textura de grão editorial ————— */
+/* Noise sutil que tira o "chapado" dos fundos claros — sensação de papel impresso. */
+@utility grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Trama de linhas finíssimas — grid editorial de fundo */
+@utility fine-grid {
+  background-image: linear-gradient(
+      to right,
+      color-mix(in srgb, var(--color-gold-dark) 8%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--color-gold-dark) 8%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 5.5rem 5.5rem;
+}
+
+/* Palavra/letra fantasma gigante ao fundo — marca d'água editorial */
+@utility ghost-word {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 0.82;
+  color: transparent;
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--color-gold) 22%, transparent);
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Sublinhado pincelado dourado sob palavras em destaque */
+@utility brush-underline {
+  background-image: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--color-gold) 55%, transparent),
+    color-mix(in srgb, var(--color-gold) 15%, transparent)
+  );
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 100% 0.28em;
+}
+
+/* ————— Respeito a prefers-reduced-motion ————— */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
