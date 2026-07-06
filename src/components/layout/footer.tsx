@@ -15,15 +15,12 @@ export function Footer() {
       <div className="container-luxe pt-20 pb-10 md:pt-28 md:pb-12">
         {/* Grid editorial */}
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-10">
-          {/* Coluna 1 — wordmark e tagline */}
+          {/* Coluna 1 — tagline e OAB */}
           <div className="lg:col-span-5">
-            <p className="max-w-sm font-display text-3xl font-medium leading-tight tracking-tight md:text-4xl">
-              {siteConfig.firm}
-            </p>
-            <p className="mt-5 font-display text-lg italic text-gold md:text-xl">
+            <p className="font-display text-lg italic text-gold md:text-xl">
               {siteConfig.tagline}
             </p>
-            <p className="mt-9 text-[0.6875rem] font-medium uppercase tracking-luxe text-ivory/50">
+            <p className="mt-5 text-[0.6875rem] font-medium uppercase tracking-luxe text-ivory/50">
               {siteConfig.oab}
             </p>
           </div>
@@ -100,6 +97,16 @@ export function Footer() {
               >
                 <Instagram aria-hidden strokeWidth={1.5} className="size-4 text-gold" />
                 {siteConfig.instagram}
+              </a>
+              <a
+                href={siteConfig.instagramFirmUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Instagram ${siteConfig.instagramFirm} — escritório (abre em nova aba)`}
+                className="inline-flex items-center gap-3 text-sm text-ivory/70 transition-colors duration-500 ease-out-expo hover:text-ivory"
+              >
+                <Instagram aria-hidden strokeWidth={1.5} className="size-4 text-gold" />
+                {siteConfig.instagramFirm}
               </a>
               <WhatsAppCta
                 label="Falar no WhatsApp"

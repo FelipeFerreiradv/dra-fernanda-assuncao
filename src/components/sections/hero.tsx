@@ -76,14 +76,14 @@ export function Hero() {
               immediate
               text={hero.title}
               delay={0.15}
-              className="relative mt-8 font-display text-5xl leading-[1.05] font-medium tracking-tight text-balance text-ink md:text-6xl xl:text-7xl"
+              className="relative mt-8 font-display text-5xl leading-[1.1] font-medium tracking-tight text-balance text-ink md:text-6xl xl:text-7xl"
             />
 
             <Reveal
               immediate
               delay={0.55}
               as="p"
-              className="relative mt-8 max-w-xl text-base leading-relaxed text-slate md:text-lg"
+              className="relative mt-8 max-w-xl text-base leading-relaxed text-slate text-justify hyphens-auto md:text-lg"
             >
               {hero.subtitle}
             </Reveal>

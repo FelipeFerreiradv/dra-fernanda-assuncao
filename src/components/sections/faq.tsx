@@ -75,7 +75,7 @@ export function Faq() {
                       </span>
                     </AccordionTrigger>
                     <AccordionContent>
-                      <p className="pl-0 md:pl-10">{item.answer}</p>
+                      <p className="pl-0 md:pl-10 text-justify hyphens-auto">{item.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}

@@ -76,7 +76,7 @@ export function About() {
                   className={cn(
                     index === 0
                       ? "font-display text-2xl leading-snug font-medium text-ink text-balance md:text-3xl"
-                      : "leading-relaxed text-slate"
+                      : "leading-relaxed text-slate text-justify hyphens-auto"
                   )}
                 >
                   {paragraph}

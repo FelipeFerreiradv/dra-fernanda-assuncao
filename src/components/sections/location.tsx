@@ -81,7 +81,7 @@ export function Location() {
         <div className="mt-16 grid gap-16 md:mt-20 lg:grid-cols-2 lg:gap-20">
           {/* ————— Coluna esquerda — texto, modos de atendimento e contato ————— */}
           <Reveal delay={0.1} y={32} className="flex flex-col">
-            <p className="max-w-xl text-lg leading-relaxed text-slate">
+            <p className="max-w-xl text-lg leading-relaxed text-slate text-justify hyphens-auto">
               {emphasize(locationSection.text, "todo o Brasil")}
             </p>
 

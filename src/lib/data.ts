@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Todo o conteúdo textual da landing page vive aqui, desacoplado dos
  * componentes. A copy segue o Provimento nº 205/2021 da OAB — nenhum
  * texto deve ser alterado sem revisão jurídica.
@@ -43,7 +43,7 @@ export const trustBar = [
 
 export const painSection = {
   number: "02",
-  title: "Se você chegou até aqui, provavelmente sente uma dessas coisas",
+  title: "Se você chegou até aqui, provavelmente está enfrentando uma destas situações",
   intro:
     "Lidar com o INSS raramente é só burocracia. Por trás de cada processo existe o suor de uma vida inteira de trabalho, o futuro de uma família e, muitas vezes, o cuidado com quem mais precisa. Talvez você esteja sentindo isto:",
   bridge:
@@ -84,7 +84,7 @@ export const areasSection = {
       id: "aposentadoria-negada",
       icon: "FileSearch",
       title: "Aposentadoria negada pelo INSS",
-      text: "Um “não” do INSS raramente é o fim da história. Muitas negativas acontecem por falta de documento, erro no reconhecimento do tempo de contribuição ou análise incompleta. Vamos revisar o seu caso juntos e entender o que ainda é possível fazer.",
+      text: 'Um "não" do INSS raramente é o fim da história. Muitas negativas acontecem por falta de documento, erro no reconhecimento do tempo de contribuição ou análise incompleta. Vamos revisar o seu caso juntos e entender o que ainda é possível fazer.',
       cta: "Me negaram, e agora? Falar no WhatsApp",
       alt: "Aposentadoria negada pelo INSS — análise do caso",
     },
@@ -112,9 +112,8 @@ export const aboutSection = {
   title: "Quem vai cuidar do seu caso",
   photoAlt: "Dra. Fernanda Assunção, advogada previdenciária em São Paulo",
   paragraphs: [
-    "Sou a Fernanda Assunção, advogada há 10 anos dedicados ao Direito Previdenciário.",
-    "Sempre enxerguei o Direito não como um monte de leis frias num papel, mas como uma ferramenta viva para mudar a realidade das pessoas. Quando escolhi a área previdenciária, entendi que ali estava o meu propósito: lidar com previdência não é só dar entrada em processos — é lidar com a dignidade, com o suor de uma vida inteira de trabalho e com o planejamento de famílias reais.",
-    "Para mim, o seu processo nunca é “só mais um”. É o seu futuro. É a subsistência da sua família. É a história de alguém que merece ser respeitada e protegida. Por isso eu seguro a sua mão desde a primeira conversa até o fim do processo, com um atendimento humano, próximo e feito no detalhe.",
+    "Sou Fernanda Assunção, advogada com 10 anos de dedicação ao Direito Previdenciário.",
+    "Sempre enxerguei o Direito não apenas como um conjunto de regras, mas como uma ferramenta viva para transformar a realidade das pessoas. Quando escolhi a área previdenciária, entendi que ali estava o meu propósito. Trabalhar com Previdência não é apenas dar entrada em processos; é cuidar da dignidade, reconhecer o esforço de uma vida inteira de trabalho e ajudar famílias reais a terem segurança e tranquilidade para o futuro.",
   ],
   signature: "Simplificando o INSS para você.",
   signatureBy: "— Dra. Fernanda Assunção · OAB/SP 262.227",
@@ -124,12 +123,13 @@ export const aboutSection = {
     "Pós-graduada em Direito Previdenciário (Universidade Cruzeiro do Sul)",
     "Especialização continuada em Previdenciário (IEPREV, Faprev e Legale)",
     "Atendimento presencial em São Paulo/SP e online para todo o Brasil",
+    "Sócia-fundadora do escritório Assunção e Santos Advogados",
   ],
 } as const;
 
 export const processSection = {
   number: "05",
-  title: "Do primeiro “oi” à solução, passo a passo",
+  title: 'Do primeiro "oi" à solução, passo a passo',
   cta: "Quero contar o meu caso",
   steps: [
     {
@@ -164,7 +164,7 @@ export const testimonialsSection = {
   number: "07",
   title: "Quem já foi atendido por aqui",
   googleCta: "Veja as avaliações no Google",
-  googleUrl: "https://www.google.com/search?q=Assun%C3%A7%C3%A3o+e+Santos+Advogados",
+  googleUrl: "https://share.google/El0AvYeg9cCG705B9",
   items: [
     {
       quote:
@@ -208,7 +208,7 @@ export const faqSection = {
     {
       question: "A renda da minha família impede o BPC/LOAS do meu filho autista?",
       answer:
-        "Existe um critério de renda para o BPC, mas ele tem detalhes e situações específicas que precisam ser analisadas caso a caso — não é uma conta automática. Antes de concluir que “não dá”, vale conversar: cada família tem uma realidade, e é ela que precisa ser olhada de perto.",
+        'Existe um critério de renda para o BPC, mas ele tem detalhes e situações específicas que precisam ser analisadas caso a caso — não é uma conta automática. Antes de concluir que "não dá", vale conversar: cada família tem uma realidade, e é ela que precisa ser olhada de perto.',
     },
     {
       question: "Vocês atendem online? Como funciona à distância?",
@@ -218,7 +218,7 @@ export const faqSection = {
     {
       question: "Preciso ir até o escritório para começar?",
       answer:
-        "Não. Você pode começar contando a sua história pelo WhatsApp. A partir daí, definimos juntos se o atendimento será presencial (na Mooca, em São Paulo) ou online.",
+        "Não. Você pode começar contando a sua história pelo WhatsApp. A partir daí, definimos juntos se o atendimento será presencial ou online.",
     },
   ],
 } as const;

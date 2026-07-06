@@ -9,6 +9,8 @@ export const siteConfig = {
   email: "recepcaoassuncaoesantosadv@gmail.com",
   instagram: "@advfernandaassuncao",
   instagramUrl: "https://www.instagram.com/advfernandaassuncao",
+  instagramFirm: "@assuncaoesantosadvs",
+  instagramFirmUrl: "https://www.instagram.com/assuncaoesantosadvs/",
   whatsappUrl:
     "https://wa.me/5511925533716?text=Ol%C3%A1%20Dra.%20Fernanda!%20Vim%20pelo%20site%20e%20gostaria%20de%20contar%20o%20meu%20caso.",
   address: {

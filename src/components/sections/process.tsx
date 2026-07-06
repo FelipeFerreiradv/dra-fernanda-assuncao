@@ -141,7 +141,7 @@ export function Process() {
                     {step.title}
                   </h3>
 
-                  <p className="mt-4 max-w-sm text-[0.9375rem] leading-relaxed text-ivory/65">
+                  <p className="mt-4 max-w-sm text-[0.9375rem] leading-relaxed text-ivory/65 text-justify hyphens-auto">
                     {step.text}
                   </p>
                 </StaggerItem>
