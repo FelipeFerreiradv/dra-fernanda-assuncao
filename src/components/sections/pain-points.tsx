@@ -67,7 +67,7 @@ export function PainPoints() {
                     &ldquo;{item.quote}&rdquo;
                   </blockquote>
 
-                  <p className="mt-4 text-[0.9375rem] leading-relaxed text-slate text-justify hyphens-auto">
+                  <p className="mt-4 text-[0.9375rem] leading-relaxed text-slate text-justify">
                     {item.text}
                   </p>
                 </div>

@@ -50,7 +50,7 @@ export function FinalCta() {
             className="mt-6 font-display text-4xl font-medium leading-[1.06] tracking-tight text-balance text-ivory md:text-6xl"
           />
 
-          <Reveal as="p" delay={0.4} className="mt-8 max-w-xl leading-relaxed text-ivory/70 text-justify hyphens-auto">
+          <Reveal as="p" delay={0.4} className="mt-8 max-w-xl leading-relaxed text-ivory/70 text-justify">
             {finalCtaSection.text}
           </Reveal>
 

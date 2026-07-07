@@ -122,7 +122,7 @@ export function Footer() {
         <div className="mt-16 border-t border-ivory/10 pt-8 md:mt-20">
           <p className="max-w-3xl text-xs leading-relaxed text-ivory/50">{legalNotice}</p>
           <p className="mt-8 text-xs text-ivory/50">
-            © <CurrentYear fallback={LAUNCH_YEAR} /> {siteConfig.firm} ·{" "}
+            © <CurrentYear fallback={LAUNCH_YEAR} /> {siteConfig.name} ·{" "}
             {siteConfig.oab}
           </p>
         </div>
