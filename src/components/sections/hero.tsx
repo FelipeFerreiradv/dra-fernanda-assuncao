@@ -67,7 +67,10 @@ export function Hero() {
             <Reveal immediate delay={0.05} y={14} className="relative">
               <p className="flex items-start gap-4 text-xs font-medium uppercase tracking-luxe text-gold-deep">
                 <span aria-hidden className="mt-2 h-px w-10 shrink-0 bg-gold/70" />
-                <span className="text-balance leading-relaxed">{hero.eyebrow}</span>
+                <span className="flex flex-col gap-0.5 leading-relaxed">
+                  <span>{hero.eyebrow}</span>
+                  <span>{hero.eyebrowSub}</span>
+                </span>
               </p>
             </Reveal>
 

@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Dra. Fernanda Assunção",
-  firm: "Assunção e Santos Advogados",
+  firm: "Assunção & Santos Advogados",
   tagline: "Simplificando o INSS para você.",
   oab: "OAB/SP 262.227",
   url: "https://drafernandaassuncao.adv.br",

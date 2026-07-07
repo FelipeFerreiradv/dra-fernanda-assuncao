@@ -5,7 +5,8 @@
  */
 
 export const hero = {
-  eyebrow: "Advogada Previdenciária · OAB/SP 262.227 · Atendimento em todo o Brasil",
+  eyebrow: "Advogada Previdenciária · OAB/SP 262.227",
+  eyebrowSub: "Atendimento em todo o Brasil",
   title:
     "O INSS negou o seu benefício? Você não precisa atravessar esse labirinto sozinho.",
   subtitle:
@@ -31,13 +32,13 @@ export const trustBar = [
   },
   {
     icon: "MapPin",
-    highlight: "Atendimento em todo o Brasil",
-    text: "presencial ou online",
+    highlight: "Presencial em São Paulo",
+    text: "e online em todo o Brasil",
   },
   {
     icon: "Scale",
     highlight: "OAB/SP 262.227",
-    text: "Assunção e Santos Advogados",
+    text: "Advocacia Previdenciária",
   },
 ] as const;
 
@@ -123,7 +124,7 @@ export const aboutSection = {
     "Pós-graduada em Direito Previdenciário (Universidade Cruzeiro do Sul)",
     "Especialização continuada em Previdenciário (IEPREV, Faprev e Legale)",
     "Atendimento presencial em São Paulo/SP e online para todo o Brasil",
-    "Sócia-fundadora do escritório Assunção e Santos Advogados",
+    "Sócia-fundadora do escritório Assunção & Santos Advogados",
   ],
 } as const;
 
@@ -168,15 +169,27 @@ export const testimonialsSection = {
   items: [
     {
       quote:
-        "Desde a primeira conversa me senti acolhida. A Dra. Fernanda me explicou cada passo com paciência e nunca me deixou sem resposta. Eu me senti cuidada, não como mais um número.",
-      author: "M. S.",
-      context: "Atendimento presencial · São Paulo",
+        "Uma profissional incrível que, além de exercer sua profissão com competência, transmite segurança, atenção e humanidade em cada detalhe.",
+      author: "Rosimeire S.",
+      context: "Google · Avaliação verificada",
     },
     {
       quote:
-        "O que mais me marcou foi o cuidado humano. Ela entendeu a situação do meu filho e me tratou com respeito do início ao fim.",
-      author: "R. A.",
-      context: "Atendimento online",
+        "Dra. Fernanda, minha advogada há anos. Não troco e indico de olhos fechados.",
+      author: "Alessandra K.",
+      context: "Google · Avaliação verificada",
+    },
+    {
+      quote:
+        "Trabalho excelente e atendimento humanizado — o que mais precisamos ao ser atendidos. Indicação total.",
+      author: "Edson C.",
+      context: "Google · Local Guide",
+    },
+    {
+      quote:
+        "Maravilhoso, excelente profissional e ótima pessoa, extremamente competente. Eu indico.",
+      author: "Naira P. F.",
+      context: "Google · Avaliação verificada",
     },
   ],
 } as const;

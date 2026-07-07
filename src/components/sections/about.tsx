@@ -50,12 +50,6 @@ export function About() {
                 />
               </ParallaxImage>
 
-              {/* Cartão flutuante com a assinatura */}
-              <div className="absolute -right-2 -bottom-6 z-10 max-w-[15rem] bg-ink p-5 shadow-sm md:-right-3">
-                <p className="font-display text-lg leading-snug italic text-gold">
-                  {aboutSection.signature}
-                </p>
-              </div>
             </div>
           </Reveal>
 
@@ -75,7 +69,7 @@ export function About() {
                   delay={0.15 + index * 0.12}
                   className={cn(
                     index === 0
-                      ? "font-display text-2xl leading-snug font-medium text-ink text-balance md:text-3xl"
+                      ? "font-display text-2xl leading-snug font-medium text-ink text-pretty md:text-3xl"
                       : "leading-relaxed text-slate text-justify hyphens-auto"
                   )}
                 >

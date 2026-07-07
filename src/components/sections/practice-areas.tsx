@@ -72,7 +72,7 @@ export function PracticeAreas() {
                     className="mt-6 block h-px w-10 bg-gold transition-all duration-700 ease-out-expo group-hover:w-full"
                   />
 
-                  <p className="mt-6 flex-1 text-[0.9375rem] leading-relaxed text-slate text-justify hyphens-auto md:text-base">
+                  <p className="mt-6 flex-1 text-[0.9375rem] leading-relaxed text-slate text-justify md:text-base">
                     {item.text}
                   </p>
 
